@@ -108,6 +108,7 @@ if (model_base_size is not None):
     dpt_imgproc.set_base_size(model_base_size)
 
 # Move model to selected device
+print(device_config_dict)
 dpt_model.to(**device_config_dict)
 dpt_model.eval()
 
