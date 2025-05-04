@@ -35,6 +35,7 @@ class HistoryKeeper:
         """Load and store results from an existing history file"""
 
         try:
+            print(self._filepath)
             with open(self._filepath, "r") as infile:
                 history_dict = json.load(infile)
         except FileNotFoundError:
